@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run All projects" type="CompoundRunConfigurationType">
+    <toRun name="Ms-registry-server [spring-boot:run...]" type="MavenRunConfiguration" />
+    <toRun name="ms-config-server" type="MavenRunConfiguration" />
+    <toRun name="ms-gateway-server" type="MavenRunConfiguration" />
+    <toRun name="ms-gestioarareasylineas" type="MavenRunConfiguration" />
+    <toRun name="ms-gestiondocentes" type="MavenRunConfiguration" />
+    <method v="2" />
+  </configuration>
+</component>
