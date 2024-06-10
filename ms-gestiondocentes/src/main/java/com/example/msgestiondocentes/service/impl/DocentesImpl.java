@@ -41,11 +41,11 @@ public class DocentesImpl implements DocentesService {
         /*for (PedidoDetalle pedidoDetalle: pedido.get().getDetalle()){
             pedidoDetalle.setProductoDto(catalogoFeign.productoBuscarPorId(pedidoDetalle.getProductoId()).getBody());
         }*/
-       /* List<Docentes> docentes1 = docentes.get().get().stream().map(pedidoDetalle -> {
-            pedidoDetalle.setProducto(catalogoFeign.productoBuscarPorId(pedidoDetalle.getProductoId()).getBody());
+       /*List<Docentes> docentes = docentes.get().getId_docentes().stream().map(pedidoDetalle -> {
+            pedidoDetalle.setGestionareasylineasDto(catalogoFeign.productoBuscarPorId(pedidoDetalle.getProductoId()).getBody());
             return pedidoDetalle;*/
 
-        /*pedido.get().setDetalle(pedidoDetalles);
+        //docentes.get().setDetalle(pedidoDetalles);
         //docentes.get().setGestionareasylineasDto(gestionareasylineasDto);*/
         return docentesRepository.findById(id_docentes);}
 

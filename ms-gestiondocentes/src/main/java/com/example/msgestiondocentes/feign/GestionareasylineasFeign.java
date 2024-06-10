@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public interface GestionareasylineasFeign {
     //por si acaso cambiar esto a id_docente creo
-    @GetMapping("/{id}")
+    @GetMapping("/{id_docente}")
 
-    ResponseEntity<GestionareasylineasDto> listarPorId(@PathVariable(required = true) Integer id);
-    default ResponseEntity<GestionareasylineasDto> fallbackCliente(Integer id, Exception e) {
+    ResponseEntity<GestionareasylineasDto> listarPorId(@PathVariable(required = true) Integer id_docente);
+    default ResponseEntity<GestionareasylineasDto> fallbackCliente(Integer id_docente, Exception e) {
 
         return ResponseEntity.ok(new GestionareasylineasDto());
     }
