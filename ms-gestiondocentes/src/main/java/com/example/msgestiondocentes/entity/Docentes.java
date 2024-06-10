@@ -10,7 +10,7 @@ import lombok.Data;
 public class Docentes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_docentes;
+
     private Integer GestionareasylineasId;
     private String especializacion;
 

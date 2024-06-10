@@ -4,11 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @AllArgsConstructor
+@Data
 @NoArgsConstructor
-public class GestionareasylineasDto {
-    private Integer id_area;
-    private String nombre_area;
-    private String descripcion;
+public class DocentesDto {
+    private Integer id_docentes;
+    private String nombre;
+    private GestionareasylineasDto gestionareasylineasDto;
+
 }
