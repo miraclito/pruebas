@@ -29,12 +29,12 @@ public class DocentesController {
         return ResponseEntity.ok(docentesService.actualizar(docentes));
     }
 
-    @GetMapping("/{id_area}")
+    @GetMapping("/{id_docentes}")
     public ResponseEntity<Docentes> listById(@PathVariable(required = true) Integer id_docentes) {
         return ResponseEntity.ok().body(docentesService.listarPorId(id_docentes).get());
     }
 
-    @DeleteMapping("/{id_area}")
+    @DeleteMapping("/{id_docentes}")
     public String deleteByid(@PathVariable(required = true) Integer id_docentes) {
         docentesService.eliminarporId(id_docentes);
         return "eliminacion correcta";
